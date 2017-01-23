@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-auto align-self-center">
+    <a (click)="expanded = !expanded">
+      <i class="fa fa-chevron-down" [ngClass]="{'fa-chevron-down': expanded, 'fa-chevron-right': !expanded}" aria-hidden="true"></i>
+    </a>
+  </div>
+  <div class="col">
+    <ng-content select="header"></ng-content>
+  </div>
+</div>
+<div class="row" *ngIf="expanded">
+  <div class="col">
+    <ng-content select="body"></ng-content>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #eee;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #eee;
+  opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #eee;
+  opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #eee;
+}
+
+.pad {
+  &-bottom {
+    padding-bottom: 15px;
+  }
+
+  &-top {
+    padding-top: 15px;
+
+  }
+
+  &-left {
+    padding-left: 15px;
+  }
+
+  &-right {
+    padding-right: 15px;
+  }
+}
+
+.margin {
+  &-bottom {
+    margin-bottom: 15px;
+  }
+
+  &-top {
+    margin-top: 15px;
+
+  }
+
+  &-left {
+    margin-left: 15px;
+  }
+
+  &-right {
+    margin-right: 15px;
+  }
+}

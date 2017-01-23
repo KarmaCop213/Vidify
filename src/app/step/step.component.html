@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-11 offset-md-1">
+    <h6>Step <button (click)="deleteStep()">Delete</button></h6>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label for="stepNumberInput">Number</label>
+          <input type="text" class="form-control" id="stepNumberInput" placeholder="Number" [(ngModel)]="step.number">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="form-group float-left">
+          <label for="stepResultInput">Passed</label>
+          <input type="checkbox" class="form-control" id="stepResultInput" placeholder="Result"
+                 [(ngModel)]="step.hasPassed">{{step.result}}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label for="stepMessageInput">Message</label>
+          <input type="text" class="form-control" id="stepMessageInput" placeholder="Message" [(ngModel)]="step.message">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

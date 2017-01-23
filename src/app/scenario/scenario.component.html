@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-11 offset-md-1">
+    <vidify-expandable-element>
+      <header>
+        <div class="form-group">
+          <label for="scenarioInput">Scenario</label><button class="margin-left" (click)="deleteScenario()">Delete</button>
+          <input type="text" class="form-control" id="scenarioInput" placeholder="Scenario" [(ngModel)]="scenario.name">
+        </div>
+      </header>
+      <body>
+        <div *ngFor="let step of scenario.steps">
+          <vidify-step [step]="step" [features]="features" [featureId]="featureId" [scenarioId]="scenario.id"></vidify-step>
+        </div>
+        <div class="col-11 offset-md-1">
+          <button (click)="addStep()">Add Step</button>
+        </div>
+      </body>
+    </vidify-expandable-element>
+  </div>
+</div>

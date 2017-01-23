@@ -1,0 +1,11 @@
+<div class="">
+  <div class="">
+    <div class="col">
+      <div *ngFor="let feature of features">
+        <vidify-feature [feature]="feature" [features]="features"></vidify-feature>
+      </div>
+      <button (click)="addFeature()">Add Feature</button>
+    </div>
+    <button (click)="save()">Save</button>
+  </div>
+</div>
